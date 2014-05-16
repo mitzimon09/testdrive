@@ -1,0 +1,1246 @@
+2014/04/02 15:39:43 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 15:39:57 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 16:25:36 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 16:25:37 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 16:25:37 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 16:25:38 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 16:25:38 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 16:25:38 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 16:25:38 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 16:25:38 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/testdrive/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php
+in /var/www/yii/testdrive/protected/views/layouts/main.php (51)
+in /var/www/yii/testdrive/protected/views/layouts/column1.php (6)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (32)
+2014/04/02 15:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 15:54:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 15:59:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 16:03:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 16:12:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 16:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 16:13:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 16:13:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 16:13:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 16:26:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 16:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii.
+---
+2014/04/02 16:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuario
+---
+2014/04/02 16:55:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuario
+---
+2014/04/02 16:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuarios
+---
+2014/04/02 16:55:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Usuarios".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Usuarios')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Usuarios
+---
+2014/04/02 16:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Users".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Users')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Users
+---
+2014/04/02 16:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Users".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Users')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Users
+---
+2014/04/02 16:58:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "User".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('User')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=User
+---
+2014/04/02 16:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Usuario".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Usuario')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Usuario
+---
+2014/04/02 16:58:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Usuarios".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Usuarios')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Usuarios
+---
+2014/04/02 16:59:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Usuarios".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Usuarios')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Usuarios
+---
+2014/04/02 16:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuarios
+---
+2014/04/02 17:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuarios
+---
+2014/04/02 17:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=user
+---
+2014/04/02 17:21:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuario
+---
+2014/04/02 17:28:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuario
+---
+2014/04/02 17:28:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuarios
+---
+2014/04/02 17:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuarios
+---
+2014/04/03 09:12:51 [error] [exception.CException] exception 'CException' with message 'Property "GiiModule.0" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(513): CComponent->__set('0', 'bootstrap.gii')
+#1 /var/www/yii/framework/base/CModule.php(86): CModule->configure(Array)
+#2 /var/www/yii/framework/YiiBase.php(206): CModule->__construct('gii', NULL, Array)
+#3 /var/www/yii/framework/base/CModule.php(282): YiiBase::createComponent('system.gii.GiiM...', 'gii', NULL, Array)
+#4 /var/www/yii/framework/web/CWebApplication.php(337): CModule->getModule('gii')
+#5 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('gii/module')
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/module')
+#7 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii/module
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=gii/model
+---
+2014/04/03 09:14:11 [error] [exception.CException] exception 'CException' with message 'Property "GiiModule.0" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(513): CComponent->__set('0', 'bootstrap.gii')
+#1 /var/www/yii/framework/base/CModule.php(86): CModule->configure(Array)
+#2 /var/www/yii/framework/YiiBase.php(206): CModule->__construct('gii', NULL, Array)
+#3 /var/www/yii/framework/base/CModule.php(282): YiiBase::createComponent('system.gii.GiiM...', 'gii', NULL, Array)
+#4 /var/www/yii/framework/web/CWebApplication.php(337): CModule->getModule('gii')
+#5 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('gii/module')
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/module')
+#7 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii/module
+---
+2014/04/03 17:11:12 [error] [exception.CException] exception 'CException' with message 'Property "CMenu.class" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('class', 'nav navbar-nav')
+#1 /var/www/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CMe...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 /var/www/yii/testdrive/protected/views/layouts/main.php(39): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#5 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#7 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /var/www/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /var/www/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/yii/testdrive/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#13 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#14 /var/www/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#15 /var/www/yii/testdrive/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/index
+---
+2014/04/04 09:38:29 [error] [php] Undefined variable: model (/var/www/yii/testdrive/protected/views/site/login.php:30)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/yii/testdrive/protected/controllers/SiteController.php(99): SiteController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/yii/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/login
+in /var/www/yii/testdrive/protected/views/site/login.php (30)
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (99)
+in /var/www/yii/testdrive/index.php (13)
+2014/04/04 09:45:08 [error] [exception.CException] exception 'CException' with message 'SiteController has an extra endWidget(CContentDecorator) call in its view.' in /var/www/yii/framework/web/CBaseController.php:210
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#1 /var/www/yii/testdrive/protected/views/layouts/column1.php(8): CBaseController->endContent()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#5 /var/www/yii/testdrive/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/login
+---
+2014/04/04 09:51:00 [error] [exception.CException] exception 'CException' with message 'SiteController has an extra endWidget(CContentDecorator) call in its view.' in /var/www/yii/framework/web/CBaseController.php:210
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#1 /var/www/yii/testdrive/protected/views/layouts/column1.php(8): CBaseController->endContent()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#5 /var/www/yii/testdrive/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/login
+---
+2014/04/04 09:51:17 [error] [exception.CException] exception 'CException' with message 'SiteController has an extra endWidget(CContentDecorator) call in its view.' in /var/www/yii/framework/web/CBaseController.php:210
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#1 /var/www/yii/testdrive/protected/views/layouts/column1.php(8): CBaseController->endContent()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#5 /var/www/yii/testdrive/protected/controllers/SiteController.php(99): CController->render('login', Array)
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/login
+---
+2014/04/07 08:35:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site2/contact".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site2/contact')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site2/contact
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 08:58:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeindex".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('homeindex')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('homeindex')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/homeindex')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/homeindex
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 09:07:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeindex".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('homeindex')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('homeindex')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/homeindex')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/homeindex
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 09:08:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homeindex".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('homeindex')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('homeindex')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/homeindex')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/homeindex
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 09:25:04 [error] [exception.CException] exception 'CException' with message 'InsideSiteController cannot find the requested view "homeindex".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('homeindex', NULL, true)
+#1 /var/www/yii/testdrive/protected/controllers/InsideSiteController.php(28): CController->render('homeindex')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): InsideSiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('InsideSite/inde...')
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=InsideSite/index
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 09:25:42 [error] [exception.CException] exception 'CException' with message 'InsideSiteController cannot find the requested view "homeindex".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('homeindex', NULL, true)
+#1 /var/www/yii/testdrive/protected/controllers/InsideSiteController.php(28): CController->render('homeindex')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): InsideSiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('InsideSite/inde...')
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=InsideSite/index
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 09:26:28 [error] [exception.CException] exception 'CException' with message 'InsideSiteController cannot find the requested view "homeindex".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('homeindex', NULL, true)
+#1 /var/www/yii/testdrive/protected/controllers/InsideSiteController.php(28): CController->render('homeindex')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): InsideSiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('InsideSite/inde...')
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=InsideSite/index
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 09:26:48 [error] [exception.CException] exception 'CException' with message 'InsideSiteController cannot find the requested view "index".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/yii/testdrive/protected/controllers/InsideSiteController.php(28): CController->render('index')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): InsideSiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('InsideSite/inde...')
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=InsideSite/index
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 09:27:48 [error] [exception.CException] exception 'CException' with message 'InsideSiteController cannot find the requested view "index".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/yii/testdrive/protected/controllers/InsideSiteController.php(28): CController->render('index')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): InsideSiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('InsideSite/inde...')
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=InsideSite/index
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 09:36:43 [error] [exception.CException] exception 'CException' with message 'InsideSiteController cannot find the requested view "insideindex".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('insideindex', NULL, true)
+#1 /var/www/yii/testdrive/protected/controllers/InsideSiteController.php(28): CController->render('insideindex')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): InsideSiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('InsideSite/inde...')
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=InsideSite/index
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=InsideSite/index
+---
+2014/04/07 09:49:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('InsideSite/inde...')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=InsideSite/index
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/07 15:44:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuarios/admin
+---
+2014/04/07 16:05:27 [error] [exception.CException] exception 'CException' with message 'Propiedad "usuarios"."Passwd" no se encuentra definida.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('Passwd')
+#1 /var/www/yii/testdrive/protected/controllers/UsuariosController.php(98): CActiveRecord->__get('Passwd')
+#2 [internal function]: UsuariosController->actionUpdate('439')
+#3 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsuariosController), Object(ReflectionMethod), Array)
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios/update')
+#15 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuarios/update&id=439
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=usuarios/update&id=439
+---
+2014/04/07 16:27:28 [error] [] stuff done
+in /var/www/yii/testdrive/protected/controllers/InsideSiteController.php (48)
+in /var/www/yii/testdrive/index.php (13)
+2014/04/07 16:30:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuarios/admin
+---
+2014/04/07 16:31:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/yii/testdrive/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=usuarios/admin
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=InsideSite/index
+---
+2014/04/08 10:08:37 [error] [exception.CException] exception 'CException' with message 'Solo se puede crear una aplicación Yii.' in /var/www/yii/framework/YiiBase.php:152
+Stack trace:
+#0 /var/www/yii/framework/base/CApplication.php(129): YiiBase::setApplication(Object(CWebApplication))
+#1 /var/www/yii/framework/YiiBase.php(125): CApplication->__construct('/var/www/yii/te...')
+#2 /var/www/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/yii/te...')
+#3 /var/www/yii/testdrive/index.php(31): YiiBase::createWebApplication('/var/www/yii/te...')
+#4 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/login
+HTTP_REFERER=http://localhost/yii/testdrive/index.php
+---
+2014/04/08 10:10:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "excel" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('excel')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('excel')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/excel')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel
+---
+2014/04/08 10:10:59 [error] [php] include(/var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:395)
+Stack trace:
+#0 /var/www/yii/testdrive/protected/controllers/SiteController.php(151): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#4 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (151)
+in /var/www/yii/testdrive/index.php (32)
+2014/04/08 10:11:25 [error] [php] include(/var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:395)
+Stack trace:
+#0 /var/www/yii/testdrive/protected/controllers/SiteController.php(151): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#4 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (151)
+in /var/www/yii/testdrive/index.php (32)
+2014/04/08 10:11:26 [error] [php] include(/var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:395)
+Stack trace:
+#0 /var/www/yii/testdrive/protected/controllers/SiteController.php(151): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#4 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (151)
+in /var/www/yii/testdrive/index.php (32)
+2014/04/08 10:11:26 [error] [php] include(/var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:395)
+Stack trace:
+#0 /var/www/yii/testdrive/protected/controllers/SiteController.php(151): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#4 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (151)
+in /var/www/yii/testdrive/index.php (32)
+2014/04/08 10:11:26 [error] [php] include(/var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:395)
+Stack trace:
+#0 /var/www/yii/testdrive/protected/controllers/SiteController.php(151): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#4 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (151)
+in /var/www/yii/testdrive/index.php (32)
+2014/04/08 16:03:40 [error] [exception.Exception] exception 'Exception' with message 'Unable to load template file: /var/www/yii/testdrive/protected/views/reports/students.xls' in /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php:194
+Stack trace:
+#0 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(177): PHPReport->loadTemplate()
+#1 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(151): PHPReport->init()
+#2 /var/www/yii/testdrive/protected/extensions/yiireport/YiiReport.php(52): PHPReport->__construct(Array)
+#3 /var/www/yii/testdrive/protected/controllers/SiteController.php(207): YiiReport->__construct(Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel2()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('excel2')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/excel2')
+#15 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel2
+---
+2014/04/08 16:04:16 [error] [exception.Exception] exception 'Exception' with message 'Unable to load template file: /var/www/yii/testdrive/protected/views/reports/students.xls' in /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php:194
+Stack trace:
+#0 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(177): PHPReport->loadTemplate()
+#1 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(151): PHPReport->init()
+#2 /var/www/yii/testdrive/protected/extensions/yiireport/YiiReport.php(52): PHPReport->__construct(Array)
+#3 /var/www/yii/testdrive/protected/controllers/SiteController.php(207): YiiReport->__construct(Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel2()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('excel2')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/excel2')
+#15 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel2
+---
+2014/04/08 16:04:26 [error] [exception.Exception] exception 'Exception' with message 'Unable to load template file: /var/www/yii/testdrive/protected/views/reports/students.xls' in /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php:194
+Stack trace:
+#0 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(177): PHPReport->loadTemplate()
+#1 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(151): PHPReport->init()
+#2 /var/www/yii/testdrive/protected/extensions/yiireport/YiiReport.php(52): PHPReport->__construct(Array)
+#3 /var/www/yii/testdrive/protected/controllers/SiteController.php(207): YiiReport->__construct(Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel2()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('excel2')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/excel2')
+#15 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel2
+---
+2014/04/08 16:10:27 [error] [php] require_once(/var/www/yii/testdrive/protected/vendors/mpdf/config_cp.php): failed to open stream: No such file or directory (/var/www/yii/testdrive/protected/vendors/mpdf/mpdf.php:39)
+Stack trace:
+#0 /var/www/yii/testdrive/protected/extensions/yiiexcel/YiiExcel.php(46): require()
+#1 unknown(0): autoload()
+#2 /var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel/Writer/PDF.php(70): spl_autoload_call()
+#3 /var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel/IOFactory.php(141): PHPExcel_Writer_PDF->__construct()
+#4 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(990): createWriter()
+#5 /var/www/yii/testdrive/protected/extensions/yiireport/YiiReport.php(84): YiiReport->renderPdf()
+#6 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(912): YiiReport->renderPdf()
+#7 /var/www/yii/testdrive/protected/controllers/SiteController.php(225): YiiReport->render()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel2()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#11 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#14 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#17 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#18 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel2
+in /var/www/yii/testdrive/protected/vendors/mpdf/mpdf.php (39)
+in /var/www/yii/testdrive/protected/vendors/mpdf/mpdf.php (39)
+in /var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel/Writer/PDF/mPDF.php (32)
+2014/04/08 16:10:38 [error] [php] require_once(/var/www/yii/testdrive/protected/vendors/mpdf/config_cp.php): failed to open stream: No such file or directory (/var/www/yii/testdrive/protected/vendors/mpdf/mpdf.php:39)
+Stack trace:
+#0 /var/www/yii/testdrive/protected/extensions/yiiexcel/YiiExcel.php(46): require()
+#1 unknown(0): autoload()
+#2 /var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel/Writer/PDF.php(70): spl_autoload_call()
+#3 /var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel/IOFactory.php(141): PHPExcel_Writer_PDF->__construct()
+#4 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(990): createWriter()
+#5 /var/www/yii/testdrive/protected/extensions/yiireport/YiiReport.php(84): YiiReport->renderPdf()
+#6 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(912): YiiReport->renderPdf()
+#7 /var/www/yii/testdrive/protected/controllers/SiteController.php(225): YiiReport->render()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel2()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#11 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#14 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#17 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#18 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel2
+in /var/www/yii/testdrive/protected/vendors/mpdf/mpdf.php (39)
+in /var/www/yii/testdrive/protected/vendors/mpdf/mpdf.php (39)
+in /var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel/Writer/PDF/mPDF.php (32)
+2014/04/08 16:13:51 [error] [php] Undefined variable: r (/var/www/yii/testdrive/protected/controllers/SiteController.php:227)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel2
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (227)
+in /var/www/yii/testdrive/index.php (32)
+2014/04/08 16:13:56 [error] [php] Undefined variable: r (/var/www/yii/testdrive/protected/controllers/SiteController.php:227)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel2
+in /var/www/yii/testdrive/protected/controllers/SiteController.php (227)
+in /var/www/yii/testdrive/index.php (32)
+2014/04/08 16:14:12 [error] [php] require_once(/var/www/yii/testdrive/protected/vendors/mpdf/config_cp.php): failed to open stream: No such file or directory (/var/www/yii/testdrive/protected/vendors/mpdf/mpdf.php:39)
+Stack trace:
+#0 /var/www/yii/testdrive/protected/extensions/yiiexcel/YiiExcel.php(46): require()
+#1 unknown(0): autoload()
+#2 /var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel/Writer/PDF.php(70): spl_autoload_call()
+#3 /var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel/IOFactory.php(141): PHPExcel_Writer_PDF->__construct()
+#4 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(990): createWriter()
+#5 /var/www/yii/testdrive/protected/extensions/yiireport/YiiReport.php(84): YiiReport->renderPdf()
+#6 /var/www/yii/testdrive/protected/extensions/yiireport/PHPReport.php(912): YiiReport->renderPdf()
+#7 /var/www/yii/testdrive/protected/controllers/SiteController.php(227): YiiReport->render()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionExcel2()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#11 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#14 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#17 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#18 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=site/excel2
+in /var/www/yii/testdrive/protected/vendors/mpdf/mpdf.php (39)
+in /var/www/yii/testdrive/protected/vendors/mpdf/mpdf.php (39)
+in /var/www/yii/testdrive/protected/vendors/phpexcel/PHPExcel/Writer/PDF/mPDF.php (32)
+2014/05/15 11:02:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/gii/module"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/g...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/gii/module
+---
+2014/05/15 11:02:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion?r=gii/module"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion?r...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion?r=gii/module
+---
+2014/05/15 16:23:58 [error] [exception.CException] exception 'CException' with message 'Alias "testdrive.modules.Configuracion.modules.Usuarios.usuario" es inválido. Verifique que el mismo apunta a un directorio o archivo exisitente.' in /var/www/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/yii/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('testdrive.modul...', true)
+#1 /var/www/yii/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 /var/www/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 /var/www/yii/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#5 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=gii/crud
+---
+2014/05/15 16:24:13 [error] [exception.CException] exception 'CException' with message 'Alias "testdrive.modules.Configuracion.usuario" es inválido. Verifique que el mismo apunta a un directorio o archivo exisitente.' in /var/www/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/yii/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('testdrive.modul...', true)
+#1 /var/www/yii/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 /var/www/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 /var/www/yii/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#5 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=gii/crud
+---
+2014/05/15 16:24:38 [error] [exception.CException] exception 'CException' with message 'Alias "testdrive.modules.Configuracion.models.usuario" es inválido. Verifique que el mismo apunta a un directorio o archivo exisitente.' in /var/www/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/yii/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('testdrive.modul...', true)
+#1 /var/www/yii/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 /var/www/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 /var/www/yii/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#5 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=gii/crud
+---
+2014/05/15 16:25:27 [error] [exception.CException] exception 'CException' with message 'Alias "testdrive.modules.Configuracion.models.Usuario" es inválido. Verifique que el mismo apunta a un directorio o archivo exisitente.' in /var/www/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /var/www/yii/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('testdrive.modul...', true)
+#1 /var/www/yii/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 /var/www/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 /var/www/yii/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#5 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=gii/crud
+---
+2014/05/15 16:25:50 [error] [exception.CException] exception 'CException' with message 'El alias "Configuracion.models.Usuario" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in /var/www/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /var/www/yii/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('Configuracion.m...', true)
+#1 /var/www/yii/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 /var/www/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 /var/www/yii/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#5 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=gii/crud
+---
