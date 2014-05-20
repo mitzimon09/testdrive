@@ -11,7 +11,6 @@ waeawewaeaw
 <?php Yum::renderFlash(); ?>
 <?php $this->renderMenu(); ?>
 </div>
-<br/>
 <div id="usercontent">
 <?php
 if (Yum::module()->debug) {

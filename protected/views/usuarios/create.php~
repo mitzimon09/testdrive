@@ -13,11 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<div id="usermenu">
-<?php Yum::renderFlash(); ?>
-<?php $this->renderMenu(); ?>
-</div>
-
 <h1>Create usuarios</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -85,8 +85,6 @@ return array(
 			'allowAutoLogin'=>true,
 			'class' => 'application.modules.user.components.YumWebUser',
 		   'loginUrl' => array('//user/user/login'),
-			//'cache' => 'system.caching.DummyCache',
-			//'class' => 'system.caching.CMemCache',
 		),
 	   'cache' => array('class' => 'system.caching.CDummyCache'),
 		// uncomment the following to enable URLs in path-format

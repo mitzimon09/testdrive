@@ -11,7 +11,7 @@ return array(
 	'theme'=>'bootstrap',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'SIMA test en YII',
-
+	'language' => 'es',
 	// preloading 'log' component
 	'preload'=>array(
 		'log'//,
