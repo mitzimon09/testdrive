@@ -24,7 +24,7 @@ return array(
 		'application.components.*',
 		'application.vendors.phpexcel.PHPExcel',
     	'ext.yiireport.*',
-    	'application.modules.user.models.*',
+    	//'application.modules.user.models.*',
 		
 	),
 
@@ -44,38 +44,7 @@ return array(
 		/**/
 		'ServiciosInstitucionales',
 		'Configuracion',
-		'user' => array(
-			'debug' => false,
-			'userTable' => 'yiiuser',
-			'translationTable' => 'yiitranslation',
-			),
-			'usergroup' => array(
-			'usergroupTable' => 'yiiusergroup',
-			'usergroupMessageTable' => 'yiiuser_group_message',
-			),
-			'membership' => array(
-			'membershipTable' => 'yiimembership',
-			'paymentTable' => 'yiipayment',
-			),
-			'friendship' => array(
-			'friendshipTable' => 'yiifriendship',
-			),
-			'profile' => array(
-			'privacySettingTable' => 'yiiprivacysetting',
-			'profileFieldTable' => 'yiiprofile_field',
-			'profileTable' => 'yiiprofile',
-			'profileCommentTable' => 'yiiprofile_comment',
-			'profileVisitTable' => 'yiiprofile_visit',
-			),
-			'role' => array(
-			'roleTable' => 'yiirole',
-			'userRoleTable' => 'yiiuser_role',
-			'actionTable' => 'yiiaction',
-			'permissionTable' => 'yiipermission',
-			),
-			'message' => array(
-			'messageTable' => 'yiimessage',
-			),
+		
 	),//end modules
 
 	// application components
@@ -83,8 +52,8 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
-			'class' => 'application.modules.user.components.YumWebUser',
-		   'loginUrl' => array('//user/user/login'),
+			/*'class' => 'application.modules.user.components.YumWebUser',
+		   'loginUrl' => array('//user/user/login'),*/
 		),
 	   'cache' => array('class' => 'system.caching.CDummyCache'),
 		// uncomment the following to enable URLs in path-format
@@ -135,15 +104,19 @@ return array(
 		),
 		'bootstrap'=>array(
             		//'class'=>'application.extensions.bootstrap.components.Bootstrap',
-			'class'=>'bootstrap.components.Bootstrap',
+					'class'=>'bootstrap.components.Bootstrap',
        		),
        		
        		
        		'authManager'=>array(
-        'class'=>'CDbAuthManager',
-        'connectionID'=>'db',
-        
-    ),
+	     			'class'=>'CDbAuthManager',
+	     			'connectionID'=>'db',
+	     			/* comentadas pk tienen los nombres por default
+	     			'itemTable'=>'AuthItem', // Tabla que contiene los elementos de autorizacion
+					'itemChildTable'=>'AuthItemChild', // Tabla que contiene los elementos padre-hijo
+					'assignmentTable'=>'	', // Tabla que contiene la signacion usuario-autorizacion
+					*/
+    			),
 	),
 	
 	// application-level parameters that can be accessed
