@@ -37,7 +37,11 @@
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Prueba de roles', 'url'=>array('/InsideSite/index')),
-				array('label'=>'Usuarios', 'url'=>array('/usuarios/admin'))
+				array('label'=>'Usuarios', 'url'=>array('/usuarios/admin')),
+				array('label'=>'Administrar Usuarios'
+					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
+					, 'visible'=>!Yii::app()->user->isGuest),
+				
 			),'htmlOptions'=>array('class'=>'nav navbar-nav'), 
 		)); ?>
       <!--ul class="nav navbar-nav navbar-right">
@@ -64,6 +68,6 @@
 	</div><!-- footer -->
 
 </div><!-- page -->
-
+<?php echo Yii::app()->user->ui->displayErrorConsole(); ?>
 </body>
 </html>
