@@ -22,19 +22,37 @@
 <?php echo Yii::app()->bootstrap->init();?>
 <body>
 
-<div class="container" id="page">
-	<div class="row" style="margin-left: auto ; margin-right: auto ; width: 500px; padding: 50px 15px;">
+	<div class="container" id="page">
+		<div class="row" style="margin-left: auto ; margin-right: auto ; width: 500px; padding: 50px 15px;">
 		
-		<div class="col-xs-6 col-md-offset-4" style="text-align: left;">
-			<?php echo $content; ?>
+			<div class="col-xs-6 col-md-offset-4" style="text-align: left;">
+				<div style="width: 380px">
 
-			<div class="clear"></div>
+					<div id="imgLogoLogin">
+						<!--img id="imLogo" border="0" name="imLogo" src="css/caduceus.jpg"-->
+					</div>
+
+
+					<div style="float: right; width: 250px; padding-top: 25px;">
+						<h1><?php 	echo Yii::app()->name; ?></h1>
+
+						<p>Sistema Integral Medico Administrativo</p>
+					</div>
+	
+					<div style="clear:both">
+						<!--img id="imLogo" border="0" name="imLogo" src="css/caduceus.jpg"-->
+					</div>
+				</div>
+
+
+				<div class="form" style="-moz-border-radius: 15px; border-radius: 15px; border:1px solid silver; padding:10px 35px; width: 65%;">
+					<?php echo $content; ?>
+				</div>
+		
+			</div>
+		
 		</div>
-		
-		
-		
-	</div>
-	<div class="row">
+		<div class="row">
 			<div class="bs-docs-footer-links muted" id="footer">
 				<ul>
 					<li>Copyright &copy; <?php echo date('Y'); ?> by hospital La Carlota</li>
@@ -43,7 +61,7 @@
 				</ul>
 			</div><!-- footer -->
 		</div>
-</div><!-- page -->
+	</div><!-- page -->
 
 </body>
 </html>

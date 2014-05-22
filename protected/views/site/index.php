@@ -22,7 +22,7 @@ should you have any questions.</p>-->
 
 <h1>Esto es <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-<p>Esta es la página de inicio.</p>
+<p>Esta es la página de inicio. Para editarla ir a /var/www/yii/testdrive/protected/views/site/index.php</p>
 
 <p>Se pueden filtrar las sigueintes cosas segun los roles</p>
 <ul>

@@ -5,14 +5,15 @@
 }
 	
 .is-superadmin-note{
-	font-size: 10px;
+	padding: 3px;
 	color: black;
 	background-color: rgb(255,255,100);
 	text-align: right;
 	border-radius: 5px;
 	position: absolute;
-	right: 0;
+	left: 45%;
 	top: 0px;
+	box-shadow: 3px 3px 5px #eee;
 }
 
 .crugepanel {

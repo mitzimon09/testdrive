@@ -89,10 +89,16 @@ return array(
 
 			// manejo del layout con cruge.
 			//
-			'loginLayout'=>'//layouts/column2',
+			/*'loginLayout'=>'//layouts/column2',
+			'registrationLayout'=>'//layouts/column2',
+			'activateAccountLayout'=>'//layouts/column2',
+			'editProfileLayout'=>'//layouts/column2',*/
+			'loginLayout'=>'//layouts/login',
 			'registrationLayout'=>'//layouts/column2',
 			'activateAccountLayout'=>'//layouts/column2',
 			'editProfileLayout'=>'//layouts/column2',
+			
+			
 			// en la siguiente puedes especificar el valor "ui" o "column2" para que use el layout
 			// de fabrica, es basico pero funcional.  si pones otro valor considera que cruge
 			// requerirá de un portlet para desplegar un menu con las opciones de administrador.
@@ -119,7 +125,7 @@ return array(
 			/*'class' => 'application.modules.user.components.YumWebUser',
 			'loginUrl' => array('//user/user/login'),*/
 		),
-		'loginLayout'=>'//layouts/login',
+		
 		
 		//
 		//  IMPORTANTE:  asegurate de que la entrada 'user' (y format) que por defecto trae Yii

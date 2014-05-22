@@ -3,7 +3,7 @@
 /* @var $model usuarios */
 
 $this->breadcrumbs=array(
-	'Usuarioses'=>array('index'),
+	'Usuarios'=>array('index'),
 	$model->folio,
 );
 
