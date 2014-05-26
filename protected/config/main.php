@@ -22,10 +22,10 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-		'application.vendors.phpexcel.PHPExcel',
-    	'ext.yiireport.*',
-    	'application.modules.cruge.components.*',
-		'application.modules.cruge.extensions.crugemailer.*',
+		'application.vendors.phpexcel.PHPExcel', 	//extension para exportar a excel
+    	'ext.yiireport.*',								//extension para crear reportes
+    	'application.modules.cruge.components.*',	//cruge es un modulo para crear y administrar usuarios, roles y permisos
+		'application.modules.cruge.extensions.crugemailer.*', //email para cruge??
 	),
 
 	'modules'=>array(
