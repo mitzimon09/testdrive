@@ -18,5 +18,6 @@
 		$this->endWidget();
 	?>
 	</div><!-- sidebar -->
+	<?php echo Yii::app()->user->ui->displayErrorConsole(); ?>
 </div>
 <?php $this->endContent(); ?>

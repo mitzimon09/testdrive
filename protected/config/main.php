@@ -68,7 +68,7 @@ return array(
 			// MIENTRAS INSTALAS..PONLO EN: false
 			// lee mas abajo respecto a 'Encriptando las claves'
 			//
-			'useEncryptedPassword' => false,
+			'useEncryptedPassword' => true,
 
 			// Algoritmo de la función hash que deseas usar
 			// Los valores admitidos están en: http://www.php.net/manual/en/function.hash-algos.php
