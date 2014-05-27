@@ -6,6 +6,7 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+Yii::setPathOfAlias('editable', dirname(__FILE__).'/../extensions/x-editable');
 
 return array(
 	'theme'=>'bootstrap',
@@ -26,6 +27,7 @@ return array(
     	'ext.yiireport.*',								//extension para crear reportes
     	'application.modules.cruge.components.*',	//cruge es un modulo para crear y administrar usuarios, roles y permisos
 		'application.modules.cruge.extensions.crugemailer.*', //email para cruge??
+		'editable.*'										//para poder editar datos de grids en su lugar
 	),
 
 	'modules'=>array(
@@ -113,18 +115,20 @@ return array(
 		),
 		
 		'ServiciosInstitucionales',
-		'Configuracion',
+		'ServiciosInstitucionales.Sistemas',
+		'Configuracion',//not used yet
+		'Configuracion.Usuarios',
 		
 	),//end modules
 
 	// application components
 	'components'=>array(
-		'user'=>array(
+		/*'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 			/*'class' => 'application.modules.user.components.YumWebUser',
-			'loginUrl' => array('//user/user/login'),*/
-		),
+			'loginUrl' => array('//user/user/login'),
+		),*/
 		
 		
 		//
@@ -150,23 +154,24 @@ return array(
 		),
 		
 		
-	   //'cache' => array('class' => 'system.caching.CDummyCache'),
-		// uncomment the following to enable URLs in path-format
-		/*
-		'urlManager'=>array(
-			'urlFormat'=>'path',
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
-		),
-		*//*
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
-		// uncomment the following to use a MySQL database
-		*/
+		
+		
+		//X-editable config
+        'editable' => array(
+            'class'     => 'editable.EditableConfig',
+            'form'      => 'bootstrap',        //form style: 'bootstrap', 'jqueryui', 'plain' 
+            'mode'      => 'popup',            //mode: 'popup' or 'inline'  
+            'defaults'  => array(              //default settings for all editable elements
+               'emptytext' => 'Click to edit'
+            )
+        ),
+
+
+
+
+
+
+
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=sima',
 			'emulatePrepare' => true,

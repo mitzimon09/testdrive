@@ -1,9 +1,8 @@
 <?php
 /* @var $this UsuariosController */
 /* @var $model usuarios */
-
 $this->breadcrumbs=array(
-	'Usuarioses'=>array('index'),
+	'Usuarios'=>array('index'),
 	'Manage',
 );
 
@@ -74,3 +73,100 @@ Puedes buscar con operadores de comparasión (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;
 		),
 	),
 )); ?>
+
+
+<br />
+<br/>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+<br/>
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
+    'id' => 'usergrid',
+    'itemsCssClass' => 'table-bordered items',
+    'dataProvider' => $model->search(),
+    'columns'=>array(
+        array(
+           'class' => 'editable.EditableColumn',
+           'name' => 'folio',
+           'headerHtmlOptions' => array('style' => 'width: 110px'),
+           'editable' => array(    //editable section
+                  'url'        => $this->createUrl('usuarios/updateUser'),
+                  'placement'  => 'right',
+              )               
+        ),
+        
+        array(
+           'class' => 'editable.EditableColumn',
+           'name' => 'nombre',
+           'headerHtmlOptions' => array('style' => 'width: 110px'),
+           'editable' => array(    //editable section
+                  'url'        => $this->createUrl('usuarios/updateUser'),
+                  'placement'  => 'right',
+              )               
+        ),
+        
+        array(
+           'class' => 'editable.EditableColumn',
+           'name' => 'aPaterno',
+           'headerHtmlOptions' => array('style' => 'width: 110px'),
+           'editable' => array(    //editable section
+                  'url'        => $this->createUrl('usuarios/updateUser'),
+                  'placement'  => 'right',
+              )               
+        ),
+        
+        array(
+           'class' => 'editable.EditableColumn',
+           'name' => 'aMaterno',
+           'headerHtmlOptions' => array('style' => 'width: 110px'),
+           'editable' => array(    //editable section
+                  'url'        => $this->createUrl('usuarios/updateUser'),
+                  'placement'  => 'right',
+              )               
+        ),
+        
+        
+        
+        array(
+           'class' => 'editable.EditableColumn',
+           'name' => 'status',
+           'headerHtmlOptions' => array('style' => 'width: 110px'),
+           'editable' => array(    //editable section
+           			'type'     => 'select',
+           			'source'    => Editable::source(array('activo' => 'activo', 'inactivo' => 'inactivo')),
+                  'url'        => $this->createUrl('usuarios/updateEditable'),
+                  'placement'  => 'right',
+              )               
+        ),
+        
+        
+        
+        
+        
+      
+         
+         array( 
+            'class' => 'editable.EditableColumn',
+            'name' => 'email',
+            'editable' => array(
+                'type'      => 'text',
+                'url'       => $this->createUrl('usuarios/updateEditable', array('model'=>'usuario', 'field'=>'email')),
+                'placement' => 'left',
+            )
+          ),  
+         
+         //editable related attribute with sorting.
+         //see http://www.yiiframework.com/wiki/281/searching-and-sorting-by-related-model-in-cgridview  
+         /*array( 
+            'class' => 'editable.EditableColumn',
+            'name' => 'email',
+            'value' => 'CHtml::value($data, "profile.language")',
+            'editable' => array(
+                'type'      => 'text',
+                'attribute' => 'profile.language',
+                'url'       => $this->createUrl('usuarios/updateProfile'),
+                'placement' => 'left',
+            )
+        ), */
+    ),
+));
+?>

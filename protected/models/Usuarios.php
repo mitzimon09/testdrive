@@ -150,4 +150,11 @@ class Usuarios extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	public static function getStatuses() {
+        return array(
+            self::ST_ACTIVO => Yii::t('text', 'activo'),
+            self::ST_INACTIVO => Yii::t('text', 'inactivo'),
+        );
+    }
 }

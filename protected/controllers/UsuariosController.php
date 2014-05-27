@@ -193,4 +193,15 @@ class UsuariosController extends Controller
 			Yii::app()->end();
 		}
 	}
+	
+	public function actionGetStatusList()
+	{
+    echo CJSON::encode(Editable::source(Status::model()->findAll(), 'status_id', 'status_text')); 
+	}
+	
+	public function actionUpdateEditable() {
+		Yii::import('editable.EditableSaver');
+		$es = new EditableSaver('Usuarios');  // 'modelName' is classname of model to be updated
+		$es->update();
+	}
 }
