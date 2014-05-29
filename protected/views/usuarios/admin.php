@@ -89,7 +89,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
            'name' => 'folio',
            'headerHtmlOptions' => array('style' => 'width: 110px'),
            'editable' => array(    //editable section
-                  'url'        => $this->createUrl('usuarios/updateUser'),
+                  'url'        => $this->createUrl('usuarios/updateEditable'),
                   'placement'  => 'right',
               )               
         ),
@@ -99,7 +99,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
            'name' => 'nombre',
            'headerHtmlOptions' => array('style' => 'width: 110px'),
            'editable' => array(    //editable section
-                  'url'        => $this->createUrl('usuarios/updateUser'),
+                  'url'        => $this->createUrl('usuarios/updateEditable'),
                   'placement'  => 'right',
               )               
         ),
@@ -109,7 +109,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
            'name' => 'aPaterno',
            'headerHtmlOptions' => array('style' => 'width: 110px'),
            'editable' => array(    //editable section
-                  'url'        => $this->createUrl('usuarios/updateUser'),
+                  'url'        => $this->createUrl('usuarios/updateEditable'),
                   'placement'  => 'right',
               )               
         ),
@@ -119,7 +119,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
            'name' => 'aMaterno',
            'headerHtmlOptions' => array('style' => 'width: 110px'),
            'editable' => array(    //editable section
-                  'url'        => $this->createUrl('usuarios/updateUser'),
+                  'url'        => $this->createUrl('usuarios/updateEditable'),
                   'placement'  => 'right',
               )               
         ),

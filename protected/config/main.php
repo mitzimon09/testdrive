@@ -21,13 +21,22 @@ return array(
 
 	// autoloading model and component classes
 	'import'=>array(
+	'application.*',
 		'application.models.*',
 		'application.components.*',
 		'application.vendors.phpexcel.PHPExcel', 	//extension para exportar a excel
     	'ext.yiireport.*',								//extension para crear reportes
     	'application.modules.cruge.components.*',	//cruge es un modulo para crear y administrar usuarios, roles y permisos
 		'application.modules.cruge.extensions.crugemailer.*', //email para cruge??
-		'editable.*'										//para poder editar datos de grids en su lugar
+		'editable.*',										//para poder editar datos de grids en su lugar
+		
+		
+		/*MODULOS PROPIOS inicia*/
+		'application.modules.ServiciosInstitucionales.*',
+		'application.modules.ServiciosInstitucionales.models.*',
+		'application.modules.ServiciosInstitucionales.modules.Sistemas.*',
+		'application.modules.ServiciosInstitucionales.modules.Sistemas.models.*',
+		/*MODULOS PROPIOS termina*/
 	),
 
 	'modules'=>array(

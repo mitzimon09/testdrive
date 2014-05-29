@@ -41,6 +41,9 @@
 				array('label'=>'Administrar Usuarios'
 					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
 					, 'visible'=>!Yii::app()->user->isGuest),
+				/*array('label'=>'Administrar Usuarios'
+					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl),*/
+				array('label'=>'Sistemas', 'url'=>array('ServiciosInstitucionales/Sistmas/catStofware/admin')),
 				
 			),'htmlOptions'=>array('class'=>'nav navbar-nav'), 
 		)); ?>
