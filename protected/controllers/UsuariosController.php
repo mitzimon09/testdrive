@@ -201,7 +201,7 @@ class UsuariosController extends Controller
 	
 	public function actionUpdateEditable() {
 		Yii::import('editable.EditableSaver');
-		$es = new EditableSaver('Usuarios');  // 'modelName' is classname of model to be updated
+		$es = new EditableSaver('usuarios');  // 'modelName' is classname of model to be updated
 		$es->update();
 	}
 }
