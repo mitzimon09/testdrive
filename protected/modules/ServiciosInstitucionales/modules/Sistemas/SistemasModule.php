@@ -1,6 +1,6 @@
 <?php
 
-class ServiciosInstitucionalesModule extends CWebModule
+class SistemasModule extends CWebModule
 {
 	public function init()
 	{
@@ -9,10 +9,9 @@ class ServiciosInstitucionalesModule extends CWebModule
 
 		// import the module-level models and components
 		$this->setImport(array(
-			'ServiciosInstitucionales.models.*',
-			'ServiciosInstitucionales.components.*',
+			'ServiciosInstitucionales.Sistemas.models.*',
+			'ServiciosInstitucionales.Sistemas.components.*',
 		));
-		$this->setModules(array('Sistemas'));
 	}
 
 	public function beforeControllerAction($controller, $action)
