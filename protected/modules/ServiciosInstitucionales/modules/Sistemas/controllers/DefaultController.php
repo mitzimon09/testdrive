@@ -13,7 +13,10 @@ class DefaultController extends Controller
 	public function actionCatalogoEquipos()
 	{
 		$this->render('catalogoEquipo');
-		
-		
+	}
+	
+	public function actionCatalogoTelefonia()
+	{
+		$this->render('catalogoTelefonia');
 	}
 }

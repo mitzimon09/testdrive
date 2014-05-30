@@ -36,14 +36,15 @@
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Prueba de roles', 'url'=>array('/InsideSite/index')),
 				array('label'=>'Usuarios', 'url'=>array('/usuarios/admin')),
 				array('label'=>'Administrar Usuarios'
 					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
 					, 'visible'=>!Yii::app()->user->isGuest),
 				/*array('label'=>'Administrar Usuarios'
 					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl),*/
-				array('label'=>'Sistemas', 'url'=>array('ServiciosInstitucionales/Sistmas/catStofware/admin')),
+				array('label'=>'cat equipo', 'url'=>array('ServiciosInstitucionales/Sistemas/default/CatalogoEquipos')),
+				array('label'=>'cat tel', 'url'=>array('ServiciosInstitucionales/Sistemas/default/CatalogoTelefonia')),
+				array('label'=>'equipo computo', 'url'=>array('ServiciosInstitucionales/Sistemas/equipoComputo/admin')),
 				
 			),'htmlOptions'=>array('class'=>'nav navbar-nav'), 
 		)); ?>
