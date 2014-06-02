@@ -32,6 +32,10 @@ return array(
 		
 		
 		/*MODULOS PROPIOS inicia*/
+		'application.modules.Configuracion.*',
+		'application.modules.Configuracion.models.*',
+		'application.modules.Configuracion.modules.Configuracion.*',
+		'application.modules.Configuracion.modules.Configuracion.models.*',
 		'application.modules.ServiciosInstitucionales.*',
 		'application.modules.ServiciosInstitucionales.models.*',
 		'application.modules.ServiciosInstitucionales.modules.Sistemas.*',
@@ -123,10 +127,14 @@ return array(
 
 		),
 		
+		/*MODULOS PROPIOS inicia*/
+		'Configuracion',
+		'Configuracion.Configuracion',
 		'ServiciosInstitucionales',
 		'ServiciosInstitucionales.Sistemas',
 		'Configuracion',//not used yet
 		'Configuracion.Usuarios',
+		/*MODULOS PROPIOS termina*/
 		
 	),//end modules
 
@@ -171,7 +179,7 @@ return array(
             'form'      => 'bootstrap',        //form style: 'bootstrap', 'jqueryui', 'plain' 
             'mode'      => 'inline',            //mode: 'popup' or 'inline'  
             'defaults'  => array(              //default settings for all editable elements
-               'emptytext' => 'Click to edit'
+               'emptytext' => 'Clic para editar'
             )
         ),
 

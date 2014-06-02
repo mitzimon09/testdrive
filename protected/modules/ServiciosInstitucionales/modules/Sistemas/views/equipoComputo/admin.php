@@ -43,8 +43,9 @@
 			'header' => 'Tipo de equipo',
 			'name' => 'keyTE',
 			'editable' => array(
-				'type' => 'text',
+				'type' => 'select',
 				'url' => $this->createUrl('EquipoComputo/updateEditable', array('model'=>'EquipoComputo', 'field'=>'keyTE')),
+				'source'    => $this->createUrl('EquipoComputo/getTipoEquipoList'),
 				'placement' => 'left',
 			)
 		),		array(
@@ -52,9 +53,10 @@
 			'header' => 'Marca',
 			'name' => 'keyMA',
 			'editable' => array(
-				'type' => 'text',
+				'type' => 'select',
 				'url' => $this->createUrl('EquipoComputo/updateEditable', array('model'=>'EquipoComputo', 'field'=>'keyMA')),
-		'placement' => 'left',
+				'source'    => $this->createUrl('EquipoComputo/getMarcaList'),
+				'placement' => 'left',
 			)
 		),
 		

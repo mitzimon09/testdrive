@@ -88,16 +88,16 @@ class EquipoComputo extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'keyIE' => 'Key Ie',
+			'keyIE' => '#',
 			'registro' => 'Registro',
 			'departamento' => 'Departamento',
-			'keyTE' => 'Key Te',
-			'keyMA' => 'Key Ma',
+			'keyTE' => 'Tipo equipo',
+			'keyMA' => 'Marca',
 			'motherboard' => 'Motherboard',
 			'drives' => 'Drives',
 			'harddisk' => 'Harddisk',
 			'memoriaRam' => 'Memoria Ram',
-			'keyMAM' => 'Key Mam',
+			'keyMAM' => 'Marca de monitor',
 			'descripcionUbicacion' => 'Descripcion Ubicacion',
 			'monitor' => 'Monitor',
 			'usuario' => 'Usuario',

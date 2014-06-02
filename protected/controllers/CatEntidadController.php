@@ -1,6 +1,6 @@
 <?php
 
-class EquipoComputoController extends Controller
+class CatEntidadController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -33,44 +33,22 @@ class EquipoComputoController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new EquipoComputo;
+		$model=new CatEntidad;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['EquipoComputo']))
+		if(isset($_POST['CatEntidad']))
 		{
-			$model->attributes=$_POST['EquipoComputo'];
+			$model->attributes=$_POST['CatEntidad'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyIE));
+				$this->redirect(array('view','id'=>$model->keyEntidades));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
 		));
 	}
-
-	public function actionCreateForm()
-	{
-		$model=new EquipoComputo;
-		$form = new CForm('application.modules.ServiciosInstitucionales.modules.Sistemas.views.equipoComputo.crudForm', $model);
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-		
-		if(isset($_POST['EquipoComputo']))
-		{
-			$model->attributes=$_POST['EquipoComputo'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyIE));
-		}
-
-		/*$this->render('create',array(
-			'model'=>$model,
-		));*/
-		
-		$this->render('createForm', array('model'=>$model,'form'=>$form));
-	}
-
 
 	/**
 	 * Updates a particular model.
@@ -84,39 +62,17 @@ class EquipoComputoController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['EquipoComputo']))
+		if(isset($_POST['CatEntidad']))
 		{
-			$model->attributes=$_POST['EquipoComputo'];
+			$model->attributes=$_POST['CatEntidad'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyIE));
+				$this->redirect(array('view','id'=>$model->keyEntidades));
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
 		));
 	}
-	
-	public function actionUpdateForm($id)
-	{
-		$model=$this->loadModel($id);
-		$form = new CForm('application.modules.ServiciosInstitucionales.modules.Sistemas.views.equipoComputo.crudForm', $model);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['EquipoComputo']))
-		{
-			$model->attributes=$_POST['EquipoComputo'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyIE));
-		}
-
-		/*$this->render('update',array(
-			'model'=>$model,
-		));*/
-		$this->render('createForm', array('model'=>$model,'form'=>$form));
-	}
-	
 
 	/**
 	 * Deletes a particular model.
@@ -137,7 +93,7 @@ class EquipoComputoController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('EquipoComputo');
+		$dataProvider=new CActiveDataProvider('CatEntidad');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -148,10 +104,10 @@ class EquipoComputoController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new EquipoComputo('search');
+		$model=new CatEntidad('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['EquipoComputo']))
-			$model->attributes=$_GET['EquipoComputo'];
+		if(isset($_GET['CatEntidad']))
+			$model->attributes=$_GET['CatEntidad'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -162,12 +118,12 @@ class EquipoComputoController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return EquipoComputo the loaded model
+	 * @return CatEntidad the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=EquipoComputo::model()->findByPk($id);
+		$model=CatEntidad::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -175,11 +131,11 @@ class EquipoComputoController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param EquipoComputo $model the model to be validated
+	 * @param CatEntidad $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='equipo-computo-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='cat-entidad-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
@@ -192,23 +148,7 @@ class EquipoComputoController extends Controller
 	*/
 	public function actionUpdateEditable() {
 		Yii::import('editable.EditableSaver');
-		$es = new EditableSaver('EquipoComputo');
+		$es = new EditableSaver('CatEntidad');
 		$es->update();
 	}
-	
-	public function actionGetTipoEquipoList()
-	{
- 		echo CJSON::encode(Editable::source(CatTipoEquipo::model()->findAll(), 'keyTE', 'descripcion')); 
-	}
-	
-	public function actionGetMarcaList()
-	{
- 		echo CJSON::encode(Editable::source(CatMarca::model()->findAll(), 'keyMA', 'descripcion')); 
-	}
-	
-	public function actionGetMarcaMonitorList()
-	{
- 		echo CJSON::encode(Editable::source(CatMarcaMonitor::model()->findAll(), 'keyMAM', 'descripcion')); 
-	}
-	
 }
