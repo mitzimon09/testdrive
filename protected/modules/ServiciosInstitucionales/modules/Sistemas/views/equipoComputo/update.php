@@ -3,9 +3,9 @@
 /* @var $model EquipoComputo */
 
 $this->breadcrumbs=array(
-	'Equipo Computos'=>array('index'),
+	'Equipo Computo'=>array('index'),
 	$model->keyIE=>array('view','id'=>$model->keyIE),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update EquipoComputo <?php echo $model->keyIE; ?></h1>
+<h1>Actualizar Equipode Computo #<?php echo $model->keyIE; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

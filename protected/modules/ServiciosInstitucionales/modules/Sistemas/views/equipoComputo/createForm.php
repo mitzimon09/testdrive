@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Equipo Computos'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
@@ -13,7 +13,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Crear equipo de cómputo</h1>
+<h1>Crear equipo de computo</h1>
 
 <div class="form">
 <?php echo $form; ?>

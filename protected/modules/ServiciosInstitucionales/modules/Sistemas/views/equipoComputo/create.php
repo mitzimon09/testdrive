@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Equipo Computos'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create EquipoComputo</h1>
+<h1>Crear Equipo de Computo</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

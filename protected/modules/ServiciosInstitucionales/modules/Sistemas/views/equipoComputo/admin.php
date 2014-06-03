@@ -1,4 +1,4 @@
-<h1>Equipo Computos</h1>
+<h1>Equipo de Computo</h1>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'equipo-computo-grid',
@@ -9,7 +9,8 @@
 			'header' => '#',
 			'name' => 'keyIE',
 			'htmlOptions' => array('style' => 'width: 10%; text-align: center;'),
-		),/*		array(
+		),
+		/*		array(
 			'class' => 'editable.EditableColumn',
 			'name' => 'registro',
 			'editable' => array(
@@ -18,26 +19,8 @@
 		'placement' => 'left',
 			)
 		),*/
-		array(
-			'class' => 'editable.EditableColumn',
-			'header' => 'Departamento',
-			'name' => 'departamento',
-			'editable' => array(
-				'type' => 'text',
-				'url' => $this->createUrl('EquipoComputo/updateEditable', array('model'=>'EquipoComputo', 'field'=>'departamento')),
-		'placement' => 'left',
-			)
-		),
-		array(
-			'class' => 'editable.EditableColumn',
-			'header' => 'Ubicación',
-			'name' => 'descripcionUbicacion',
-			'editable' => array(
-				'type' => 'text',
-				'url' => $this->createUrl('EquipoComputo/updateEditable', array('model'=>'EquipoComputo', 'field'=>'descripcionUbicacion')),
-		'placement' => 'left',
-			)
-		),
+		'departamento',
+		'descripcionUbicacion',
 		array(
 			'class' => 'editable.EditableColumn',
 			'header' => 'Tipo de equipo',
@@ -48,7 +31,8 @@
 				'source'    => $this->createUrl('EquipoComputo/getTipoEquipoList'),
 				'placement' => 'left',
 			)
-		),		array(
+		),		
+		array(
 			'class' => 'editable.EditableColumn',
 			'header' => 'Marca',
 			'name' => 'keyMA',
@@ -59,16 +43,7 @@
 				'placement' => 'left',
 			)
 		),
-		
-		array(
-			'class' => 'editable.EditableColumn',
-			'name' => 'status',
-			'editable' => array(
-				'type' => 'text',
-				'url' => $this->createUrl('EquipoComputo/updateEditable', array('model'=>'EquipoComputo', 'field'=>'status')),
-		'placement' => 'left',
-			)
-		),
+		'status',
 		/*
 		array(
 			'class' => 'editable.EditableColumn',

@@ -3,7 +3,7 @@
 /* @var $model EquipoComputo */
 
 $this->breadcrumbs=array(
-	'Equipo Computos'=>array('index'),
+	'Equipo Computo'=>array('index'),
 	$model->keyIE,
 );
 
@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View EquipoComputo #<?php echo $model->keyIE; ?></h1>
+<h1>Ver Equipo de Computo #<?php echo $model->keyIE; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

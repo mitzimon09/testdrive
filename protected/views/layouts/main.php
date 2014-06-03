@@ -42,9 +42,9 @@
 					, 'visible'=>!Yii::app()->user->isGuest),
 				/*array('label'=>'Administrar Usuarios'
 					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl),*/
-				array('label'=>'cat equipo', 'url'=>array('ServiciosInstitucionales/Sistemas/default/CatalogoEquipos')),
-				array('label'=>'cat tel', 'url'=>array('ServiciosInstitucionales/Sistemas/default/CatalogoTelefonia')),
-				array('label'=>'equipo computo', 'url'=>array('ServiciosInstitucionales/Sistemas/equipoComputo/admin')),
+				array('label'=>'cat equipo', 'url'=>Yii::app()->createUrl('ServiciosInstitucionales/Sistemas/default/CatalogoEquipos')),
+				array('label'=>'cat tel', 'url'=>Yii::app()->createUrl('ServiciosInstitucionales/Sistemas/default/CatalogoTelefonia')),
+				array('label'=>'equipo computo', 'url'=>Yii::app()->createUrl('ServiciosInstitucionales/Sistemas/equipoComputo/admin')),
 				
 			),'htmlOptions'=>array('class'=>'nav navbar-nav'), 
 		)); ?>

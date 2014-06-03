@@ -38,6 +38,12 @@ class EquipoComputoController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		$model2 = new CatEntidad;
+		$model->descripcionEntidad=$model2->findByPk($model->entidad)->descripcionEntidad;
+		$model->usuario=Yii::app()->user->name;
+		$model->fecha=date('Y-m-d', time());
+		$model->hora=date('h:i a', time());
+		
 		if(isset($_POST['EquipoComputo']))
 		{
 			$model->attributes=$_POST['EquipoComputo'];
@@ -56,6 +62,13 @@ class EquipoComputoController extends Controller
 		$form = new CForm('application.modules.ServiciosInstitucionales.modules.Sistemas.views.equipoComputo.crudForm', $model);
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+		
+		
+		$model2 = new CatEntidad;
+		$model->descripcionEntidad=$model2->findByPk($model->entidad)->descripcionEntidad;
+		$model->usuario=Yii::app()->user->name;
+		$model->fecha=date('Y-m-d', time());
+		$model->hora=date('h:i a', time());
 		
 		if(isset($_POST['EquipoComputo']))
 		{
@@ -87,6 +100,14 @@ class EquipoComputoController extends Controller
 		if(isset($_POST['EquipoComputo']))
 		{
 			$model->attributes=$_POST['EquipoComputo'];
+			
+			
+			$model2 = new CatEntidad;
+			$model->descripcionEntidad=$model2->findByPk($model->entidad)->descripcionEntidad;
+			$model->usuario=Yii::app()->user->name;
+			$model->fecha=date('Y-m-d', time());
+			$model->hora=date('h:i a', time());
+			
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->keyIE));
 		}

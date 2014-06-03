@@ -18,7 +18,10 @@
 <h2> Ubicación y detalles de registro </h1>
 	<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status',array('size'=>1,'maxlength'=>1)); ?>
+		<?php echo CHtml::activeDropDownList($model, 'status', array(
+            'A'=>'Activo',
+            'I'=>'Inactivo',
+    )); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 
@@ -42,7 +45,6 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'entidad'); ?>
-		<?php echo $form->textField($model,'entidad',array('size'=>2,'maxlength'=>2)); ?>
 		<?php 
 		$lista=CHtml::listData(CatEntidad::model()->findAll(), 'codigoEntidad', 'descripcionEntidad');
 		echo CHtml::activeDropDownList($model,'entidad', $lista);
@@ -129,34 +131,11 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'usuario'); ?>
-		<?php echo $form->textField($model,'usuario',array('size'=>30,'maxlength'=>30)); ?>
-		<?php echo $form->error($model,'usuario'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->textField($model,'fecha',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'fecha'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'hora'); ?>
-		<?php echo $form->textField($model,'hora',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'hora'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'solicitud'); ?>
 		<?php echo $form->textField($model,'solicitud',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'solicitud'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'descripcionEntidad'); ?>
-		<?php echo $form->textField($model,'descripcionEntidad',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'descripcionEntidad'); ?>
-	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar'); ?>
