@@ -21,15 +21,13 @@ return array(
 
 	// autoloading model and component classes
 	'import'=>array(
-	'application.*',
+		'application.*',
 		'application.models.*',
 		'application.components.*',
-		'application.vendors.phpexcel.PHPExcel', 	//extension para exportar a excel
-    	'ext.yiireport.*',								//extension para crear reportes
-    	'application.modules.cruge.components.*',	//cruge es un modulo para crear y administrar usuarios, roles y permisos
-		'application.modules.cruge.extensions.crugemailer.*', //email para cruge??
-		'editable.*',										//para poder editar datos de grids en su lugar
-		
+		'application.modules.cruge.*',
+		'application.modules.cruge.components.*',	//cruge es un modulo para crear y administrar usuarios, roles y permisos
+		'application.modules.cruge.extensions.crugemailer.*',
+		'editable.*',	
 		
 		/*MODULOS PROPIOS inicia*/
 		'application.modules.Configuracion.*',
@@ -40,12 +38,13 @@ return array(
 		'application.modules.ServiciosInstitucionales.models.*',
 		'application.modules.ServiciosInstitucionales.modules.Sistemas.*',
 		'application.modules.ServiciosInstitucionales.modules.Sistemas.models.*',
+		'application.modules.ServiciosInstitucionales.modules.Sistemas.controllers.*',
 		/*MODULOS PROPIOS termina*/
 	),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/**/
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'lacarlota',
@@ -77,7 +76,7 @@ return array(
 
 			// NO OLVIDES PONER EN FALSE TRAS INSTALAR
 			'debug'=>true,
-			'rbacSetupEnabled'=>true,
+			'rbacSetupEnabled'=>false,
 			'allowUserAlways'=>true,
 
 			// MIENTRAS INSTALAS..PONLO EN: false
@@ -140,38 +139,37 @@ return array(
 
 	// application components
 	'components'=>array(
-		/*'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-			/*'class' => 'application.modules.user.components.YumWebUser',
-			'loginUrl' => array('//user/user/login'),
-		),*/
-		
-		
-		//
-		//  IMPORTANTE:  asegurate de que la entrada 'user' (y format) que por defecto trae Yii
-		//               sea sustituida por estas a continuación:
-		//
-		'user'=>array(
-			'allowAutoLogin'=>true,
-			'class' => 'application.modules.cruge.components.CrugeWebUser',
-			'loginUrl' => array('/cruge/ui/login'),
+			//  IMPORTANTE:  asegurate de que la entrada 'user' (y format) que por defecto trae Yii
+			//               sea sustituida por estas a continuación:
+			//
+			'user'=>array(
+				'allowAutoLogin'=>true,
+				'class' => 'application.modules.cruge.components.CrugeWebUser',
+				'loginUrl' => array('/cruge/ui/login'),
+			),
+			'authManager' => array(
+				'class' => 'application.modules.cruge.components.CrugeAuthManager',
+			),
+			'crugemailer'=>array(
+				'class' => 'application.modules.cruge.components.CrugeMailer',
+				'mailfrom' => 'email-desde-donde-quieres-enviar-los-mensajes@xxxx.com',
+				'subjectprefix' => 'Tu Encabezado del asunto - ',
+				'debug' => true,
+			),
+			'format' => array(
+				'datetimeFormat'=>"d M, Y h:m:s a",
+			),
+		// uncomment the following to enable URLs in path-format
+		/*
+		'urlManager'=>array(
+			'urlFormat'=>'path',
+			'rules'=>array(
+				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+			),
 		),
-		'authManager' => array(
-			'class' => 'application.modules.cruge.components.CrugeAuthManager',
-		),
-		'crugemailer'=>array(
-			'class' => 'application.modules.cruge.components.CrugeMailer',
-			'mailfrom' => 'email-desde-donde-quieres-enviar-los-mensajes@xxxx.com',
-			'subjectprefix' => 'Tu Encabezado del asunto - ',
-			'debug' => true,
-		),
-		'format' => array(
-			'datetimeFormat'=>"d M, Y h:m:s a",
-		),
-		
-		
-		
+		*/
 		
 		//X-editable config
         'editable' => array(
@@ -236,11 +234,18 @@ return array(
     			),*/
 	),
 	
+	'controllerMap' => array(
+        // ...
+        'barcodegenerator' => array(
+            'class' => 'ext.barcodegenerator.BarcodeGeneratorController',
+        ),
+    ),
+	
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'omorales@lacarlota.um.edu.mx',
 	),
     'sourceLanguage'=>'en',
     'language'=>'es',

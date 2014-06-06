@@ -3,6 +3,9 @@
 return array(
  
     'elements'=>array(
+    	'codigo'=>array(
+            'type'=>'text',
+        ),
         'status'=>array(
             'type'=>'text',
         ),

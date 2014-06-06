@@ -1,0 +1,47 @@
+.tetris-thumbnail{
+	width: 33%;
+	float:left;
+	/*padding: 2px;*/
+}
+.tetris-thumbnail > div {
+	text-align: center;
+	padding: 5px;
+}
+	
+.pager {
+	clear: both;
+}
+
+.columna {
+	width: 40%;
+	float:left;
+	margin: 10px;
+}
+/*.footer{
+			
+			margin: 10% auto;
+		}*/
+
+@media print
+	{
+		.navbar-header, .navbar-collapse, .breadcrumbs, h1, .search-button, .search-form, .summary, .pager{
+			display: none;
+		}
+  		a{
+  			text-decoration: none
+  		}
+  		a[href]:after {
+		 content: none !important;
+	  }
+  
+  		.tetris-thumbnail{
+			width: 25%;
+			float:left;
+			margin: 5px;
+		}
+		
+		.footer{
+			clear:both;
+		}
+  
+	}

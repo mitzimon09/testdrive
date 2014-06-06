@@ -34,8 +34,8 @@
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Login', 'url'=>array('cruge/ui/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('cruge/ui/logout'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Usuarios', 'url'=>array('/usuarios/admin')),
 				array('label'=>'Administrar Usuarios'
 					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
@@ -66,8 +66,7 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by hospital La Carlota. All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 

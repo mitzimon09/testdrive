@@ -19,6 +19,7 @@
 		'placement' => 'left',
 			)
 		),*/
+		'codigo',
 		'departamento',
 		'descripcionUbicacion',
 		array(

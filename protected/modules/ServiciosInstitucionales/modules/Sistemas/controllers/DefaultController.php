@@ -5,6 +5,7 @@ class DefaultController extends Controller
 
 	public $layout='//layouts/column1';
 	
+	
 	public function actionIndex()
 	{
 		$this->render('index');
@@ -19,4 +20,22 @@ class DefaultController extends Controller
 	{
 		$this->render('catalogoTelefonia');
 	}
+	
+	
+	
+	public function actionPrintLabels()
+	{
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/protected/views/layouts/styles/print.css');
+		$model=new EquipoComputo('searchLabels');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['EquipoComputo']))
+			$model->attributes=$_GET['EquipoComputo'];
+			
+
+		$this->render('printLabels',array(
+			'model'=>$model,
+			
+		));
+	}
+	
 }
