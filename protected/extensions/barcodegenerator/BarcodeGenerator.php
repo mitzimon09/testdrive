@@ -12,10 +12,10 @@ class BarcodeGenerator extends CApplicationComponent
 {
 	public $bcHeight, $bcThinWidth, $bcThickWidth, $bcFontSize, $mode, $fontSize, $outMode, $codeMap;
 	
-    public function init($mode='png', $height=50, $thin=2, $thick=3, $fSize=2){
+    public function init($mode='png', $height=100, $thin=2, $thick=4, $fSize=2){
 		$this->bcHeight = $height;
 		$this->bcThinWidth = $thin;
-		$this->bcThickWidth = $this->bcThinWidth * $thick;
+		$this->bcThickWidth = $this->bcThinWidth + $thick;
 		$this->fontSize = $fSize;
 		$this->mode = $mode;
 		$this->outMode = array('gif'=>'gif', 'png'=>'png', 'jpeg'=>'jpeg', 'wbmp'=>'vnd.wap.wbmp');
