@@ -56,33 +56,6 @@ class EquipoComputoController extends Controller
 		));
 	}
 
-	public function actionCreateForm()
-	{
-		$model=new EquipoComputo;
-		$form = new CForm('application.modules.ServiciosInstitucionales.modules.Sistemas.views.equipoComputo.crudForm', $model);
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-		
-		
-		$model2 = new CatEntidad;
-		$model->descripcionEntidad=$model2->findByPk($model->entidad)->descripcionEntidad;
-		$model->usuario=Yii::app()->user->name;
-		$model->fecha=date('Y-m-d', time());
-		$model->hora=date('h:i a', time());
-		
-		if(isset($_POST['EquipoComputo']))
-		{
-			$model->attributes=$_POST['EquipoComputo'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyIE));
-		}
-
-		/*$this->render('create',array(
-			'model'=>$model,
-		));*/
-		
-		$this->render('createForm', array('model'=>$model,'form'=>$form));
-	}
 
 
 	/**
@@ -115,27 +88,6 @@ class EquipoComputoController extends Controller
 		$this->render('update',array(
 			'model'=>$model,
 		));
-	}
-	
-	public function actionUpdateForm($id)
-	{
-		$model=$this->loadModel($id);
-		$form = new CForm('application.modules.ServiciosInstitucionales.modules.Sistemas.views.equipoComputo.crudForm', $model);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['EquipoComputo']))
-		{
-			$model->attributes=$_POST['EquipoComputo'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyIE));
-		}
-
-		/*$this->render('update',array(
-			'model'=>$model,
-		));*/
-		$this->render('createForm', array('model'=>$model,'form'=>$form));
 	}
 	
 

@@ -32,9 +32,14 @@ class DefaultController extends Controller
 			$model->attributes=$_GET['EquipoComputo'];
 			
 
+		$modelt=new TelefoniaCelular('searchLabels');
+		$modelt->unsetAttributes();  // clear any default values
+		if(isset($_GET['TelefoniaCelular']))
+			$modelt->attributes=$_GET['TelefoniaCelular'];
+
 		$this->render('printLabels',array(
 			'model'=>$model,
-			
+			'modelt'=>$modelt,
 		));
 	}
 	
