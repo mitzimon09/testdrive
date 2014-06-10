@@ -27,6 +27,7 @@
  * @property integer $tipoProcesador
  * @property string $velocidadProcesador
  * @property string $codigo
+ * @property string $keyP
  */
 class EquipoComputo extends CActiveRecord
 {
@@ -57,7 +58,7 @@ class EquipoComputo extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('registro, departamento, keyTE, keyMA, motherboard, drives, harddisk, memoriaRam, keyMAM, descripcionUbicacion, monitor, usuario, fecha, hora, entidad, status, solicitud, descripcionEntidad, descripcionAlmacen, tipoProcesador, velocidadProcesador', 'required'),
-			array('keyTE, keyMA, harddisk, memoriaRam, keyMAM, tipoProcesador', 'numerical', 'integerOnly'=>true),
+			array('keyTE, keyMA, harddisk, memoriaRam, keyMAM, tipoProcesador, keyP', 'numerical', 'integerOnly'=>true),
 			array('registro, solicitud, velocidadProcesador', 'length', 'max'=>20),
 			array('departamento', 'length', 'max'=>50),
 			array('motherboard, descripcionUbicacion, descripcionEntidad, descripcionAlmacen', 'length', 'max'=>200),
@@ -69,7 +70,7 @@ class EquipoComputo extends CActiveRecord
 			array('codigo', 'length', 'max'=>12),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('keyIE, registro, departamento, keyTE, keyMA, motherboard, drives, harddisk, memoriaRam, keyMAM, descripcionUbicacion, monitor, usuario, fecha, hora, entidad, status, solicitud, descripcionEntidad, descripcionAlmacen, tipoProcesador, velocidadProcesador, codigo', 'safe', 'on'=>'search'),
+			array('keyIE, registro, departamento, keyTE, keyMA, motherboard, drives, harddisk, memoriaRam, keyMAM, descripcionUbicacion, monitor, usuario, fecha, hora, entidad, status, solicitud, descripcionEntidad, descripcionAlmacen, tipoProcesador, velocidadProcesador, codigo, keyP', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -112,7 +113,8 @@ class EquipoComputo extends CActiveRecord
 			'descripcionAlmacen' => 'Descripcion Almacen',
 			'tipoProcesador' => 'Tipo Procesador',
 			'velocidadProcesador' => 'Velocidad Procesador',
-			'codigo' => 'Código'
+			'codigo' => 'Código',
+			'keyP' => 'Proveedor'
 		);
 	}
 
@@ -150,6 +152,8 @@ class EquipoComputo extends CActiveRecord
 		$criteria->compare('tipoProcesador',$this->tipoProcesador);
 		$criteria->compare('velocidadProcesador',$this->velocidadProcesador,true);
 		$criteria->compare('codigo',$this->codigo,true);
+		$criteria->compare('keyP',$this->keyP,true);
+		
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

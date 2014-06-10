@@ -4,11 +4,6 @@
 /* @var $form CActiveForm */
 
 
-Yii::app()->clientScript->registerScript('generarCodigo', "
-	function putCodigo(){
-		$(#codigoField).value='asda'
-	}
-");
 ?>
 
 <div class="form">
@@ -68,6 +63,15 @@ Yii::app()->clientScript->registerScript('generarCodigo', "
 		echo CHtml::activeDropDownList($model,'entidad', $lista);
 		?> 
 		<?php echo $form->error($model,'entidad'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'keyP'); ?>
+		<?php 
+		$lista=CHtml::listData(Proveedor::model()->findAll('tipoProveedor="sistemas" order by razonSocial'), 'keyP', 'razonSocial');
+		echo CHtml::activeDropDownList($model,'keyP', $lista);
+		?> 
+		<?php echo $form->error($model,'keyP'); ?>
 	</div>
 
 <h2> Información técnica </h1>

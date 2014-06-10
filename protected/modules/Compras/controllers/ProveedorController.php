@@ -1,6 +1,6 @@
 <?php
 
-class EquipoComputoController extends Controller
+class ProveedorController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -33,31 +33,22 @@ class EquipoComputoController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new EquipoComputo;
+		$model=new Proveedor;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		
-		if(isset($_POST['EquipoComputo']))
+		if(isset($_POST['Proveedor']))
 		{
-			$model->attributes=$_POST['EquipoComputo'];
-			$model2 = new CatEntidad;
-			$model3 =$model2->findByPk($model->entidad);
-			$model->descripcionEntidad=$model3->descripcionEntidad;
-			$model->usuario=Yii::app()->user->name;
-			$model->fecha=date('Y-m-d', time());
-			$model->hora=date('h:i a', time());
+			$model->attributes=$_POST['Proveedor'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyIE));
+				$this->redirect(array('view','id'=>$model->keyP));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
 		));
 	}
-
-
 
 	/**
 	 * Updates a particular model.
@@ -71,36 +62,17 @@ class EquipoComputoController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['EquipoComputo']))
+		if(isset($_POST['Proveedor']))
 		{
-			$model->attributes=$_POST['EquipoComputo'];
-			
-			
-			$model2 = new CatEntidad;
-			$model->descripcionEntidad=$model2->findByPk($model->entidad)->descripcionEntidad;
-			$model->usuario=Yii::app()->user->name;
-			$model->fecha=date('Y-m-d', time());
-			$model->hora=date('h:i a', time());
-			//$model->codigo="test2";
+			$model->attributes=$_POST['Proveedor'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyIE));
+				$this->redirect(array('view','id'=>$model->keyP));
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
 		));
 	}
-	
-	public function beforeSave(){
-	
-		$model2 = new CatEntidad;
-		$model->descripcionEntidad=$model2->findByPk($model->entidad)->descripcionEntidad;
-		$model->usuario=Yii::app()->user->name;
-		$model->fecha=date('Y-m-d', time());
-		$model->hora=date('h:i a', time());
-		return true;
-	}
-	
 
 	/**
 	 * Deletes a particular model.
@@ -121,7 +93,7 @@ class EquipoComputoController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('EquipoComputo');
+		$dataProvider=new CActiveDataProvider('Proveedor');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -132,10 +104,10 @@ class EquipoComputoController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new EquipoComputo('search');
+		$model=new Proveedor('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['EquipoComputo']))
-			$model->attributes=$_GET['EquipoComputo'];
+		if(isset($_GET['Proveedor']))
+			$model->attributes=$_GET['Proveedor'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -146,12 +118,12 @@ class EquipoComputoController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return EquipoComputo the loaded model
+	 * @return Proveedor the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=EquipoComputo::model()->findByPk($id);
+		$model=Proveedor::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -159,11 +131,11 @@ class EquipoComputoController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param EquipoComputo $model the model to be validated
+	 * @param Proveedor $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='equipo-computo-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='proveedor-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
@@ -176,28 +148,7 @@ class EquipoComputoController extends Controller
 	*/
 	public function actionUpdateEditable() {
 		Yii::import('editable.EditableSaver');
-		$es = new EditableSaver('EquipoComputo');
+		$es = new EditableSaver('Proveedor');
 		$es->update();
 	}
-	
-	public function actionGetTipoEquipoList()
-	{
- 		echo CJSON::encode(Editable::source(CatTipoEquipo::model()->findAll(), 'keyTE', 'descripcion')); 
-	}
-	
-	public function actionGetMarcaList()
-	{
- 		echo CJSON::encode(Editable::source(CatMarca::model()->findAll(), 'keyMA', 'descripcion')); 
-	}
-	
-	public function actionGetMarcaMonitorList()
-	{
- 		echo CJSON::encode(Editable::source(CatMarcaMonitor::model()->findAll(), 'keyMAM', 'descripcion')); 
-	}
-	
-	public function actionGetProveedorSistemasList()
-	{
- 		echo CJSON::encode(Editable::source(Proveedor::model()->findAll(), 'keyP', 'razonSocial')); 
-	}
-	
 }

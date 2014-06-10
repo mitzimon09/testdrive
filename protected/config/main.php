@@ -30,6 +30,8 @@ return array(
 		'editable.*',	
 		
 		/*MODULOS PROPIOS inicia*/
+		'application.modules.Compras.*',
+		'application.modules.Compras.models.*',
 		'application.modules.Configuracion.*',
 		'application.modules.Configuracion.models.*',
 		'application.modules.Configuracion.modules.Configuracion.*',
@@ -127,12 +129,12 @@ return array(
 		),
 		
 		/*MODULOS PROPIOS inicia*/
+		'Compras',
 		'Configuracion',
+		'Configuracion.Usuarios',
 		'Configuracion.Configuracion',
 		'ServiciosInstitucionales',
 		'ServiciosInstitucionales.Sistemas',
-		'Configuracion',//not used yet
-		'Configuracion.Usuarios',
 		/*MODULOS PROPIOS termina*/
 		
 	),//end modules
