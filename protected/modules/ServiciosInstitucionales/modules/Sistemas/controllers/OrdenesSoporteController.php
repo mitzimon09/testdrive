@@ -126,17 +126,19 @@ class OrdenesSoporteController extends Controller
 		if(isset($_POST['OrdenesSoporte']))
 		{
 			$model->attributes=$_POST['OrdenesSoporte'];
+			$model2 = new CatTipoSoporte;
+			$model3 = new CatAlmacen;
+			
 			
 			$model->observaciones=$model->observaciones."";
-			
+			//Se han puesto varios de estas pk en la base de datos no pueden ser nulos los campos.
+			//No se ha cambiado la base de datos para no romper otras instalaciones
 			$model->entidad=$model->entidadSolicitud;
-			$model->registro="";
-			$model->solicitud="";
+			$model->registro=0;
+			$model->solicitud=0;
 			$model->descripcionSoporte=$model2->findByPk($model->keyTS)->descripcion;
-			$model->descripcionAlmacen=$model2->findByPk($model->almacen)->descripcion;
-			$model->usuario=Yii::app()->user->name;
-			$model->fecha=date('Y-m-d', time());
-			$model->hora=date('h:i a', time());
+			$model->descripcionTS=$model2->findByPk($model->keyTS)->descripcion;
+			$model->descripcionAlmacen=$model3->find('almacen="'.$model->almacen.'"')->descripcion;
 			
 			
 			

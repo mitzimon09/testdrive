@@ -70,7 +70,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'hora'); ?>
-		<?php echo CHtml::activeTimeField($model,'hora', '',array('id'=>'time_id')); ?>
+		<?php echo $form->textField($model,'hora', array ('pattern'=>'[0-2][0-9]:[0-5][0-9] (am|pm)' )); ?>
 		<?php echo $form->error($model,'hora'); ?>
 	</div>
 
