@@ -7209,3 +7209,1003 @@ Stack trace:
 REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/telefonia/admin
 HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=cruge/ui/login
 ---
+2014/06/11 11:27:03 [error] [exception.CException] exception 'CException' with message 'OrdenesSoporteController no ha podido encontrar la vista "admin" solicitada.' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#1 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(114): CController->render('admin', Array)
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionAdmin()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 11:27:10 [error] [exception.CException] exception 'CException' with message 'OrdenesSoporteController no ha podido encontrar la vista "admin" solicitada.' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#1 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(114): CController->render('admin', Array)
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionAdmin()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 11:53:20 [error] [exception.CException] exception 'CException' with message 'Propiedad "OrdenesSoporte"."keyIE" no se encuentra definida.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('keyIE')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('keyIE')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(OrdenesSoporte), 'keyIE')
+#3 /var/www/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(OrdenesSoporte), 'keyIE', Array)
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(97): CHtml::activeTextField(Object(OrdenesSoporte), 'keyIE', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(109): CDataColumn->renderFilterCellContent()
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(505): CGridColumn->renderFilterCell()
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(483): CGridView->renderFilter()
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(453): CGridView->renderTableHeader()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(160): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(128): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/views/ordenesSoporte/admin.php(45): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(114): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#24 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#26 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#27 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#29 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#30 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#31 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#32 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 12:13:56 [error] [exception.CException] exception 'CException' with message 'OrdenesSoporteController no ha podido encontrar la vista "adminListCatTipoSoporte" solicitada.' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/views/ordenesSoporte/admin.php(21): CController->renderPartial('adminListCatTip...', Array, true)
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#5 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(114): CController->render('admin', Array)
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionAdmin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#10 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 12:14:58 [error] [exception.CException] exception 'CException' with message 'OrdenesSoporteController no ha podido encontrar la vista "adminListCatTipoSoporte" solicitada.' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/views/ordenesSoporte/admin.php(21): CController->renderPartial('adminListCatTip...', Array, true)
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#5 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(114): CController->render('admin', Array)
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionAdmin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#10 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 12:15:22 [error] [exception.CException] exception 'CException' with message 'OrdenesSoporteController no ha podido encontrar la vista "adminListCatTipoSoporte" solicitada.' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/views/ordenesSoporte/admin.php(21): CController->renderPartial('adminListCatTip...', Array, true)
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#5 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(114): CController->render('admin', Array)
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionAdmin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#10 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 12:15:33 [error] [exception.CException] exception 'CException' with message 'OrdenesSoporteController no ha podido encontrar la vista "adminListTerminada" solicitada.' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/views/ordenesSoporte/admin.php(32): CController->renderPartial('adminListTermin...', Array, true)
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#5 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(114): CController->render('admin', Array)
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionAdmin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#10 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 12:26:18 [error] [php] Undefined index: OrdenesSoporte (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:113)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (113)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:05:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen/admin
+---
+2014/06/11 15:05:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen/admin
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=cruge/ui/login
+---
+2014/06/11 15:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen/admin
+---
+2014/06/11 15:05:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/CatAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/CatAlmacen/admin
+---
+2014/06/11 15:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen/admin
+---
+2014/06/11 15:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/CatEntidad
+---
+2014/06/11 15:06:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatEntidad
+---
+2014/06/11 15:06:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatEntidad
+---
+2014/06/11 15:06:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatEntidad
+---
+2014/06/11 15:07:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatEntidad
+---
+2014/06/11 15:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatEntidad
+---
+2014/06/11 15:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatEntidad
+---
+2014/06/11 15:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatEntidad
+---
+2014/06/11 15:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatEntidad
+---
+2014/06/11 15:07:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/CatEntidad
+---
+2014/06/11 15:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen/admin
+---
+2014/06/11 15:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/CatEntidad
+---
+2014/06/11 15:07:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatEntidad
+---
+2014/06/11 15:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/CatEntidad"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/CatEntidad
+---
+2014/06/11 15:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen/admin
+---
+2014/06/11 15:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen/admin
+---
+2014/06/11 15:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen
+---
+2014/06/11 15:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen
+---
+2014/06/11 15:09:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen/admin
+---
+2014/06/11 15:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen/admin
+---
+2014/06/11 15:09:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen/admin
+---
+2014/06/11 15:09:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen/admin
+---
+2014/06/11 15:09:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen/admin
+---
+2014/06/11 15:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen/admin
+---
+2014/06/11 15:10:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen/admin
+---
+2014/06/11 15:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/catEntidad/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/c...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/catEntidad/admin
+---
+2014/06/11 15:11:39 [error] [exception.CException] exception 'CException' with message 'CatEntidadController no ha podido encontrar la vista "admin" solicitada.' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#1 /var/www/yii/testdrive/protected/controllers/CatEntidadController.php(114): CController->render('admin', Array)
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): CatEntidadController->actionAdmin()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('catEntidad/admi...')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=catEntidad/admin
+---
+2014/06/11 15:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen/admin
+---
+2014/06/11 15:15:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen/admin
+---
+2014/06/11 15:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/catAlmacen/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/catAlmacen/admin
+---
+2014/06/11 15:19:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "admin" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/admin
+---
+2014/06/11 15:20:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "admin" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/admin
+---
+2014/06/11 15:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "admin" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/admin
+---
+2014/06/11 15:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "admin" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/admin
+---
+2014/06/11 15:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "admin" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/admin
+---
+2014/06/11 15:21:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "Asd" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('Asd')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('Asd')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/Asd
+---
+2014/06/11 15:21:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "Asd" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('Asd')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('Asd')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/Asd
+---
+2014/06/11 15:21:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "Asd" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('Asd')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('Asd')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/Asd
+---
+2014/06/11 15:21:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "Asd" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('Asd')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('Asd')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/Asd
+---
+2014/06/11 15:21:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "Asd" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('Asd')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('Asd')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/Asd
+---
+2014/06/11 15:21:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "Asd" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('Asd')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('Asd')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/Asd
+---
+2014/06/11 15:21:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "Asd" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('Asd')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('Asd')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/Asd
+---
+2014/06/11 15:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "Asd" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('Asd')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('Asd')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/Asd
+---
+2014/06/11 15:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "asd" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('asd')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('asd')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#3 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/default/asd
+---
+2014/06/11 15:25:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/CatAlmacen"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/CatAlmacen
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=gii/crud
+---
+2014/06/11 15:25:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "Configuracion/Configuracion/CatAlmacen"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Configuracion/C...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=Configuracion/Configuracion/CatAlmacen
+---
+2014/06/11 15:39:27 [error] [php] Undefined variable: model2 (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:50)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (50)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:40:11 [error] [exception.CException] exception 'CException' with message 'Propiedad "CatEntidad"."descripcion" no se encuentra definida.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('descripcion')
+#1 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(53): CActiveRecord->__get('descripcion')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionCreate()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+---
+2014/06/11 15:40:56 [error] [php] Trying to get property of non-object (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:54)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (54)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:41:44 [error] [php] Trying to get property of non-object (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:55)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (55)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:42:14 [error] [php] Trying to get property of non-object (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:55)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (55)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:43:31 [error] [php] Trying to get property of non-object (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:55)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (55)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:43:47 [error] [php] Trying to get property of non-object (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:55)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (55)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:44:06 [error] [php] Use of undefined constant almacen - assumed 'almacen' (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:55)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (55)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:44:19 [error] [php] Trying to get property of non-object (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:56)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (56)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:48:10 [error] [system.db.CDbCommand] CDbCommand::fetch() falló: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HADM' in 'where clause'. La sentencia SQL ejecutada fue: SELECT * FROM `almacenes` `t` WHERE almacen=HADM LIMIT 1.
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (54)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 15:48:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HADM' in 'where clause'. The SQL statement executed was: SELECT * FROM `almacenes` `t` WHERE almacen=HADM LIMIT 1' in /var/www/yii/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(1297): CDbCommand->queryRow()
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(1402): CActiveRecord->query(Object(CDbCriteria))
+#3 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(54): CActiveRecord->find('almacen=HADM')
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionCreate()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#8 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#14 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/create
+---
+2014/06/11 16:06:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "ServiciosInstitucional.es/Sistemas/ordenesSoporte/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucional.es/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 16:06:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "ServiciosInstitucional.es/Sistemas/ordenesSoporte/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucional.es/Sistemas/ordenesSoporte/admin
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=cruge/ui/login
+---
+2014/06/11 16:25:02 [error] [php] Undefined variable: form (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:106)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#1 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#2 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/save
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (106)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 16:29:18 [error] [php] Missing argument 2 for CWebUser::setFlash(), called in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php on line 107 and defined (/var/www/yii/framework/web/auth/CWebUser.php:675)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#2 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#3 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/save
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (107)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 16:35:11 [error] [exception.CException] exception 'CException' with message 'OrdenesSoporteController y sus behaviors no tienen un método o closure llamado "admin".' in /var/www/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(111): CComponent->__call('admin', Array)
+#1 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(111): OrdenesSoporteController->admin()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionSave()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('save')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/save
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 16:52:12 [error] [exception.CException] exception 'CException' with message 'OrdenesSoporteController y sus behaviors no tienen un método o closure llamado "admin".' in /var/www/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(111): CComponent->__call('admin', Array)
+#1 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(111): OrdenesSoporteController->admin()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionSave()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('save')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/save
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 16:52:25 [error] [exception.CException] exception 'CException' with message 'OrdenesSoporteController y sus behaviors no tienen un método o closure llamado "admin".' in /var/www/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(111): CComponent->__call('admin', Array)
+#1 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(111): OrdenesSoporteController->admin()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): OrdenesSoporteController->actionSave()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#6 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('save')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#12 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/OrdenesSoporte/save
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/admin
+---
+2014/06/11 17:30:06 [error] [php] Undefined variable: model2 (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:135)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#3 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#4 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/update&id=77
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (135)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 17:30:20 [error] [php] Undefined variable: model2 (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:135)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#3 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#4 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/update&id=80
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (135)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 17:30:35 [error] [php] Undefined variable: model2 (/var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php:135)
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/yii/framework/web/filters/CFilterChain.php(133): OrdenesSoporteController->runAction()
+#3 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#4 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CrugeAccessControlFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): OrdenesSoporteController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): OrdenesSoporteController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /var/www/yii/testdrive/index.php(32): CWebApplication->run()
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/update&id=81
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (135)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/11 17:35:25 [error] [exception.CException] exception 'CException' with message 'CActiveForm y sus behaviors no tienen un método o closure llamado "activeDateField".' in /var/www/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/views/ordenesSoporte/_form.php(67): CComponent->__call('activeDateField', Array)
+#1 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/views/ordenesSoporte/_form.php(67): CActiveForm->activeDateField(Object(OrdenesSoporte), 'fecha', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#5 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/views/ordenesSoporte/update.php(21): CController->renderPartial('_form', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/yii/te...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/yii/te...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/yii/te...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#10 /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php(149): CController->render('update', Array)
+#11 [internal function]: OrdenesSoporteController->actionUpdate('77')
+#12 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(OrdenesSoporteController), Array)
+#13 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrdenesSoporteController), Object(ReflectionMethod), Array)
+#14 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php(90): CFilterChain->run()
+#17 /var/www/yii/framework/web/filters/CFilter.php(38): CrugeAccessControlFilter->preFilter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#19 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#22 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#23 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenesSoporte/update&id=77
+---

@@ -1,12 +1,12 @@
 <?php
 
-class CatEntidadController extends Controller
+class CatAlmacenController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/column1';
 
 	/**
 	 * @return array action filters
@@ -33,16 +33,16 @@ class CatEntidadController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new CatEntidad;
+		$model=new CatAlmacen;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['CatEntidad']))
+		if(isset($_POST['CatAlmacen']))
 		{
-			$model->attributes=$_POST['CatEntidad'];
+			$model->attributes=$_POST['CatAlmacen'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyEntidades));
+				$this->redirect(array('view','id'=>$model->keyAlmacenes));
 		}
 
 		$this->render('create',array(
@@ -62,11 +62,11 @@ class CatEntidadController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['CatEntidad']))
+		if(isset($_POST['CatAlmacen']))
 		{
-			$model->attributes=$_POST['CatEntidad'];
+			$model->attributes=$_POST['CatAlmacen'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->keyEntidades));
+				$this->redirect(array('view','id'=>$model->keyAlmacenes));
 		}
 
 		$this->render('update',array(
@@ -93,7 +93,7 @@ class CatEntidadController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('CatEntidad');
+		$dataProvider=new CActiveDataProvider('CatAlmacen');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -104,10 +104,10 @@ class CatEntidadController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new CatEntidad('search');
+		$model=new CatAlmacen('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['CatEntidad']))
-			$model->attributes=$_GET['CatEntidad'];
+		if(isset($_GET['CatAlmacen']))
+			$model->attributes=$_GET['CatAlmacen'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -118,12 +118,12 @@ class CatEntidadController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return CatEntidad the loaded model
+	 * @return CatAlmacen the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=CatEntidad::model()->findByPk($id);
+		$model=CatAlmacen::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -131,11 +131,11 @@ class CatEntidadController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param CatEntidad $model the model to be validated
+	 * @param CatAlmacen $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='cat-entidad-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='cat-almacen-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
@@ -148,7 +148,7 @@ class CatEntidadController extends Controller
 	*/
 	public function actionUpdateEditable() {
 		Yii::import('editable.EditableSaver');
-		$es = new EditableSaver('CatEntidad');
+		$es = new EditableSaver('CatAlmacen');
 		$es->update();
 	}
 }

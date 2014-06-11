@@ -3,7 +3,7 @@ return array (
   'template' => 'default',
   'connectionId' => 'db',
   'tablePrefix' => '',
-  'modelPath' => 'application.modules.Compras.models',
+  'modelPath' => 'application.modules.Configuracion.modules.Configuracion.models',
   'baseClass' => 'CActiveRecord',
   'buildRelations' => '1',
 );

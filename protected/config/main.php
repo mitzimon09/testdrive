@@ -34,6 +34,7 @@ return array(
 		'application.modules.Configuracion.models.*',
 		'application.modules.Configuracion.modules.Configuracion.*',
 		'application.modules.Configuracion.modules.Configuracion.models.*',
+		'application.modules.Configuracion.modules.Configuracion.controllers.*',
 		'application.modules.ServiciosInstitucionales.*',
 		'application.modules.ServiciosInstitucionales.models.*',
 		'application.modules.ServiciosInstitucionales.modules.Sistemas.*',
