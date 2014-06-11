@@ -16,9 +16,6 @@ return array(
 	// preloading 'log' component
 	'preload'=>array('log'),
 	
-	'commandMap' => array(
-		'docs' => '/../commands/DocsCommand.php', 
-	),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -243,7 +240,7 @@ return array(
             'class' => 'ext.barcodegenerator.BarcodeGeneratorController',
         ),
     ),
-	
+
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
