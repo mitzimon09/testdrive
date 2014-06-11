@@ -14,9 +14,10 @@ return array(
 	'name'=>'SIMA test en YII',
 
 	// preloading 'log' component
-	'preload'=>array(
-		'log'//,
-		//'bootstrap',
+	'preload'=>array('log'),
+	
+	'commandMap' => array(
+		'docs' => '/../commands/DocsCommand.php', 
 	),
 
 	// autoloading model and component classes
@@ -51,11 +52,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'lacarlota',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			//'ipFilters'=>array('127.0.0.1','::1'),
-			'ipFilters'=>false,
-			'generatorPaths'=>array(
-				'bootstrap.gii', // since 0.9.1
-			),
+			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 		/**/ 		
             		
@@ -78,7 +75,7 @@ return array(
 
 			// NO OLVIDES PONER EN FALSE TRAS INSTALAR
 			'debug'=>true,
-			'rbacSetupEnabled'=>false,
+			'rbacSetupEnabled'=>true,
 			'allowUserAlways'=>true,
 
 			// MIENTRAS INSTALAS..PONLO EN: false
@@ -182,6 +179,10 @@ return array(
                'emptytext' => 'Clic para editar'
             )
         ),
+        
+                
+		
+		
 
 
 
@@ -196,7 +197,7 @@ return array(
 			'password' => '',
 			'charset' => 'utf8',
 		),
-		/**/
+		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
@@ -209,14 +210,14 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/**/
+				/*
 				array(
 					'class'=>'CWebLogRoute',
 				 	'levels'=>'trace',
 			    		'categories'=>'vardump',
 				    	'showInFireBug'=>true
 				),
-				/**/
+				*/
 			),
 		),
 		'bootstrap'=>array(
@@ -249,7 +250,7 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'omorales@lacarlota.um.edu.mx',
 	),
-    'sourceLanguage'=>'en',
+    'sourceLanguage'=>'es',
     'language'=>'es',
     
     

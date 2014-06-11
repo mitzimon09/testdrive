@@ -29,7 +29,7 @@
 	</div><!-- header -->
 	
 	<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" style="height: 100%">
-        <?php $this->widget('zii.widgets.CMenu',array(
+        <?php $this->widget('bootstrap.widgets.TbMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),

@@ -7192,3 +7192,20 @@ Stack trace:
 #27 {main}
 REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/equipoComputo/update&id=1
 ---
+2014/06/10 15:52:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "ServiciosInstitucionales/Sistemas/telefonia/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/telefonia/admin
+---
+2014/06/10 15:52:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "ServiciosInstitucionales/Sistemas/telefonia/admin"' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('ServiciosInstit...')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/yii/testdrive/index.php(32): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/telefonia/admin
+HTTP_REFERER=http://localhost/yii/testdrive/index.php?r=cruge/ui/login
+---
