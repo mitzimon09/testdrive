@@ -8320,3 +8320,39 @@ REQUEST_URI=/yii/testdrive/index.php?r=ServiciosInstitucionales/Sistemas/ordenes
 in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (135)
 in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
 in /var/www/yii/testdrive/index.php (32)
+2014/06/12 08:39:32 [warning] [application] Error al definir unsafe el atributo "codigo" de "OrdenesSoporte".
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (190)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/12 08:39:32 [warning] [application] Error al definir unsafe el atributo "codigo" de "OrdenesSoporte".
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (194)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/12 08:39:32 [warning] [application] Error al definir unsafe el atributo "codigo" de "OrdenesSoporte".
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (198)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/12 08:39:35 [warning] [application] Error al definir unsafe el atributo "codigo" de "OrdenesSoporte".
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (190)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/12 08:39:35 [warning] [application] Error al definir unsafe el atributo "codigo" de "OrdenesSoporte".
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (194)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/12 08:39:35 [warning] [application] Error al definir unsafe el atributo "codigo" de "OrdenesSoporte".
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (198)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/12 08:39:57 [warning] [application] Error al definir unsafe el atributo "codigo" de "OrdenesSoporte".
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (190)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/12 08:39:57 [warning] [application] Error al definir unsafe el atributo "codigo" de "OrdenesSoporte".
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (194)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)
+2014/06/12 08:39:57 [warning] [application] Error al definir unsafe el atributo "codigo" de "OrdenesSoporte".
+in /var/www/yii/testdrive/protected/modules/ServiciosInstitucionales/modules/Sistemas/controllers/OrdenesSoporteController.php (198)
+in /var/www/yii/testdrive/protected/modules/cruge/components/CrugeAccessControlFilter.php (90)
+in /var/www/yii/testdrive/index.php (32)

@@ -45,7 +45,7 @@ class InsideSiteController extends Controller
 		$auth->assign('admin','emartinez');
 		$auth->assign('user','test');
 		//echo "stuff";
-		Yii::log('stuff done', CLogger::LEVEL_ERROR, '');
+		Yii::log('', CLogger::LEVEL_ERROR, 'stuff done');
 	}
 
 	/**

@@ -9,6 +9,24 @@ return array(
 	// preloading 'log' component
 	'preload'=>array('log'),
 
+	'import' => array(
+        'ext.giix-components.*',
+        'commands.*',
+        'docs'
+	),
+	
+	'commandMap'=>array(
+        /*'docs'=>array(
+            'class'=>'ext.commands.DocsCommand',
+           ),*/
+			'docs' => array(
+		     // alias of the path where you extracted the DocsCommand.php
+		     'class' => 'application.commands.DocsCommand',
+        ),
+        // other commands
+    ),
+
+
 	// application components
 	'components'=>array(
 		'db'=>array(
