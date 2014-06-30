@@ -38,11 +38,16 @@ return array(
 		'application.modules.Configuracion.modules.Configuracion.*',
 		'application.modules.Configuracion.modules.Configuracion.models.*',
 		'application.modules.Configuracion.modules.Configuracion.controllers.*',
+		'application.modules.Configuracion.modules.Usuarios.*',
+		'application.modules.Configuracion.modules.Usuarios.models.*',
+		'application.modules.Configuracion.modules.Usuarios.controllers.*',
 		'application.modules.ServiciosInstitucionales.*',
 		'application.modules.ServiciosInstitucionales.models.*',
 		'application.modules.ServiciosInstitucionales.modules.Sistemas.*',
 		'application.modules.ServiciosInstitucionales.modules.Sistemas.models.*',
 		'application.modules.ServiciosInstitucionales.modules.Sistemas.controllers.*',
+		'application.modules.PuntoDeVenta.*',
+		'application.modules.PuntoDeVenta.models.*',
 		/*MODULOS PROPIOS termina*/
 	),
 
@@ -133,6 +138,7 @@ return array(
 		'Configuracion.Configuracion',
 		'ServiciosInstitucionales',
 		'ServiciosInstitucionales.Sistemas',
+		'PuntoDeVenta',
 		/*MODULOS PROPIOS termina*/
 		
 	),//end modules

@@ -36,7 +36,7 @@
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('cruge/ui/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('cruge/ui/logout'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Usuarios', 'url'=>array('/usuarios/admin')),
+				array('label'=>'Usuarios', 'url'=>Yii::app()->createUrl('Configuracion/Usuarios/UsuariosSima/admin')),
 				array('label'=>'Administrar Usuarios'
 					, 'url'=>Yii::app()->user->ui->userManagementAdminUrl
 					, 'visible'=>!Yii::app()->user->isGuest),
